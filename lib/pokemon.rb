@@ -11,6 +11,6 @@ attr_accessor :name, :type, :db, :id
   end
 
   def self.find(num, db)
-    db.execute("SELECT * FROM pokemon WERHE id = num")
+    db.execute("SELECT * FROM pokemon WERHE pokemon.id = num")
   end
 end
