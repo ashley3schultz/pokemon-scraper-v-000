@@ -18,5 +18,3 @@ attr_accessor :name, :type, :db, :id, :hp
     self.new(name: p[0][1], type: p[0][2], db: db, id: p[0][0])
   end
 end
-
-#ALTER TABLE pokemon ADD COLUMN hp INTEGER;
