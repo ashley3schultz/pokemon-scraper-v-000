@@ -7,7 +7,6 @@ attr_accessor :name, :type, :db, :id, :hp
     @id = id
     @db = db
     @hp = hp
-    binding.pry
   end
 
   def self.save(name, type, db)
@@ -21,5 +20,6 @@ attr_accessor :name, :type, :db, :id, :hp
 
   def alter_hp(num, dp)
     db.execute("UPDATE pokemon SET hp = ? WHERE id = ?",num, self.hp)
+    p = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?",num)
   end
 end
