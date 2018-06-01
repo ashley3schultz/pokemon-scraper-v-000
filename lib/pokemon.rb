@@ -15,6 +15,6 @@ attr_reader :name, :type, :db, :id
     db.execute("SELECT pokemon.* FROM pokemon")
   end
 
-  def id
-  end
+  def self.id 
+  end 
 end
