@@ -11,6 +11,6 @@ attr_reader :name, :type, :db, :id
   end
 
   def self.find(num, db)
-    db.execute("SELECT * FROM pokemon WHERE id = ?",num)
+    db.execute("SELECT pokemon.* FROM pokemon")
   end
 end
