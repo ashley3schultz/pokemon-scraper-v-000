@@ -1,10 +1,9 @@
 class Pokemon
-attr_reader :name, :type, :db, :id
+attr_reader :name, :type, :db
 
   def initialize(name:name, type:type, db:db, id:id)
     @name = name
     @type = type
-    @id = id
   end
 
   def self.save(name, type, db)
@@ -13,9 +12,5 @@ attr_reader :name, :type, :db, :id
 
   def self.find(num, db)
     db.execute("SELECT name, type FROM pokemon")
-  end
-
-  def id
-    @id
   end
 end
