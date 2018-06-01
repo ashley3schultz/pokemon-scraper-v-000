@@ -16,6 +16,6 @@ attr_accessor :name, :type, :db, :id
     p = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ? LIMIT 1",num)
     binding.pry
     #po = Self.new(p[0][1], p[0][2], db, p[0][0])
-    
+
   end
 end
