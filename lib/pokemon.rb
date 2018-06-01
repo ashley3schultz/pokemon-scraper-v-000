@@ -13,4 +13,7 @@ attr_reader :name, :type, :db, :id
   def self.find(num, db)
     db.execute("SELECT pokemon.* FROM pokemon")
   end
+
+  def id 
+  end 
 end
