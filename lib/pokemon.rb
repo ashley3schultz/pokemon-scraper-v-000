@@ -7,6 +7,7 @@ attr_accessor :name, :type, :db, :id, :hp
     @id = id
     @db = db
     @hp = hp
+    binding.pry
   end
 
   def self.save(name, type, db)
