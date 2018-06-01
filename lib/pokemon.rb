@@ -13,7 +13,8 @@ attr_accessor :name, :type, :db, :id
   end
 
   def self.find(num, db)
-    new_pokemon = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?",num)
+    p = db.execute("SELECT * FROM pokemon WHERE pokemon.id = ?",num)
+    Self.new(p[1], p[2], db, p[0])
     binding.pry
   end
 end
