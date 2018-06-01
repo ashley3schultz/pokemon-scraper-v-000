@@ -4,7 +4,7 @@ attr_accessor :name, :type, :db, :id
   def initialize(name:name, type:type, db:db, id:id)
     @name = name
     @type = type
-    @id = id 
+    @id = id
     @db = db
   end
 
