@@ -16,5 +16,6 @@ attr_reader :name, :type, :db, :id
   end
 
   def id
+    @id
   end
 end
