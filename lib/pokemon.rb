@@ -12,9 +12,9 @@ attr_reader :name, :type, :db, :id
   end
 
   def self.find(num, db)
-    db.execute("SELECT pokemon.* FROM pokemon")
+    db.execute("SELECT pokemon.id FROM pokemon")
   end
 
-  def self.id 
-  end 
+  def self.id
+  end
 end
